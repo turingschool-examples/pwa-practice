@@ -28,3 +28,19 @@ p {
   border-right: solid 75px transparent;
   margin: auto;
 }
+
+@media screen and (max-width: 900px) {
+  p {
+    font-size: 30px;
+    top: -220px;
+    width: 120px;
+    height: 93px;
+    left: -60px;
+  }
+
+  .triangle {
+    border-top: solid 250px white;
+    border-left: solid 150px transparent;
+    border-right: solid 150px transparent;
+  }
+}
