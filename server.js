@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 
-app.set('port', process.env.NODE_ENV || 3000);
+app.set('port', process.env.PORT || 3000);
 app.locals.title = 'pw8ball';
 
 app.use(express.static('public'));
