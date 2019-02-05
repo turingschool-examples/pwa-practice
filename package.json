@@ -1,14 +1,14 @@
 {
   "name": "PWAtest",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "practice repo for adding a web manifest",
+  "main": "public/index.js",
   "scripts": {
     "start": "node server.js",
     "test": "mocha --exit"
   },
   "keywords": [],
-  "author": "",
+  "author": "Leta Keane",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
