@@ -1,0 +1,30 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  color: white;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+  color: magenta;
+  text-align: center;
+  top: -110px;
+  position: relative;
+  width: 90px;
+  height: 93px;
+  left: -45px;
+  margin: 0px;
+}
+
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-top: solid 125px white;
+  border-left: solid 75px transparent;
+  border-right: solid 75px transparent;
+  margin: auto;
+}
