@@ -1,4 +1,3 @@
-const Shake = require('shake.js');
 const answers = [
   'It is certain.',
   'It is decidedly so.',
@@ -22,13 +21,6 @@ const answers = [
   'Very doubtful.'
 ];
 
-get myShakeEvent = new Shake({
-    threshold: 15, // optional shake strength threshold
-    timeout: 1000 // optional, determines the frequency of event generation
-});
-
-myShakeEvent.start();
-
 const getIndex = () => {
   return Math.floor(Math.random() * (answers.length - 1));
 }
@@ -37,6 +29,11 @@ const showAnswer = () => {
   document.querySelector('.answer').innerText = answers[getIndex(answers)];
 }
 
+window.addEventListener('shake', showAnswer, false);
+
+const stopShake = () => {
+  shakeEvent.stop();
+}
+
 document.addEventListener('click', showAnswer);
 document.addEventListener('keydown', showAnswer);
-document.addEventListener('shake', showAnswer);

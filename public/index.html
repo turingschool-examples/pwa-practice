@@ -12,5 +12,12 @@
       <p class="answer"></p>
     </div>
   </body>
-  <script src="./index.js" charset="utf-8"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
+  <script src="index.js"></script>
+  <script>
+    let shakeEvent = new Shake({threshold: 15});
+
+    shakeEvent.start();
+  </script>
+
 </html>
