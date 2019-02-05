@@ -11,3 +11,5 @@ app.use(bodyParser.json());
 app.listen(app.get('port'), () => {
   console.log(`${app.locals.title} is now running on localhost:${app.get('port')}!`)
 })
+
+module.exports = app;
